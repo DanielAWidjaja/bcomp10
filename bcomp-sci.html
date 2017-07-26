@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<script type="text/javascript" src="TweenMax.min.js"></script>
+		<script type="text/javascript" src="data-sci.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		
+		<title>Brilliant Competition 10 - Pengumuman Matematika</title>
+	</head>
+	
+	
+	<style>
+	
+		 /*@font-face {
+			font-family: 'Titillium Web';
+			src: url('fonts/Titillium-Regular.eot') format('eot'), 
+				 url('fonts/Titillium-Regular.woff') format('woff'), 
+				 url('fonts/Titillium-Regular.ttf')  format('truetype'),
+				 url('fonts/Titillium-Regular.svg') format('svg');
+		}*/
+
+		@font-face {
+			font-family: 'Roboto';
+			src: url('fonts/Roboto-Light.eot') format('eot'),
+				 url('fonts/Roboto-Light.woff') format('woff'),
+				 url('fonts/Roboto-Light.ttf') format('truetype'),
+				 url('fonts/Roboto-Light.svg') format('svg');
+		}
+		
+		body{
+			font-family: 'Roboto', Calibri, sans-serif;
+			line-height:1.2;
+			overflow:hidden;
+			background-image:url("watermarkppt-sci.png");
+			background-size:100vw 100vh;
+			background-repeat:none;
+		}
+		
+		#container {
+			margin:75px auto 0 auto;
+			width:1000px;
+			height:420px;
+		}
+		
+		#photo {
+			width:360px;
+			height:250px;
+			float:left;
+			margin:100px 50px 0 50px;
+		}
+		
+		#text-container {
+			float:left;
+			margin:100px 0px;
+			transform: translateX(0);
+		}
+		
+		#rank {
+			font-size:80px;
+			font-weight:bold;
+			color:#ff001f;
+		}
+		
+		#names {
+			font-size:40px;
+			font-weight:bold;
+			color:#0f0afb;
+		}
+		
+		#school {
+			font-size:30px;
+			font-weight:bold;
+			margin-top:10px;
+			color:#cecece;
+		}
+	
+		#donelist {
+			margin:0 auto;
+			width:80%;
+			font-size:16px;
+			text-align:center;
+			padding-top:45px;
+			color:#cbcbcb;
+		}
+		
+		.donelistrow {
+			line-height:1.8;
+		}
+		
+	</style>
+	
+	<body>
+	
+		<div id="container">
+			<img id="photo" src="qmark.png"></img>
+			<div id="text-container">
+				<div id="rank">#01</div>
+				<div id="names">Jonathan Christopher<br>Kevin Arimetta</div>
+				<div id="school">SMAK PENABUR GS</div>
+				<!-- Inspired by pengumuman BComp 5/6 - Samuel Wirajaya, Christian Anthony Setyawan & Vincent Sebastian The -->
+			</div>
+		</div>
+		
+		<div id="donelist">
+			
+		</div>
+	
+	</body>
+	
+	<script>
+		initShuffle("sci");
+	</script>
+</html>
