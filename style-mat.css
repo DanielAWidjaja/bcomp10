@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Light.eot') format('eot'),
+		 url('fonts/Roboto-Light.woff') format('woff'),
+		 url('fonts/Roboto-Light.ttf') format('truetype'),
+		 url('fonts/Roboto-Light.svg') format('svg');
+}
+@font-face {
+	font-family: 'CODE';
+	src: url('fonts/CODE-Bold.eot') format('eot'),
+		 url('fonts/CODE-Bold.woff') format('woff'),
+		 url('fonts/CODE-Bold.ttf') format('truetype'),
+		 url('fonts/CODE-Bold.svg') format('svg');;
+}
+
+body{
+	font-family: 'CODE', Calibri, sans-serif;
+	line-height:1.2;
+	overflow:hidden;
+	background-image:url("BGMAT.png");
+	background-size:100vw 100vh;
+	background-repeat:none;
+}
+
+#container {
+	margin:75px auto 0 auto;
+	width:1200px;
+	height:420px;
+}
+
+#photo {
+	width:360px;
+	height:250px;
+	float:left;
+	margin:100px 50px 0 50px;
+}
+
+#text-container {
+	float:left;
+	margin:100px 0px;
+	transform: translateX(0);
+}
+
+#rank {
+	font-size:80px;
+	font-weight:bold;
+	color:#ff001f;
+}
+
+#names {
+	font-size:40px;
+	font-weight:bold;
+	color:#0f0afb;
+}
+
+#school {
+	font-size:30px;
+	font-weight:bold;
+	margin-top:10px;
+	color:#cecece;
+}
+
+#donelist {
+	margin:0 auto;
+	width:80%;
+	font-size:16px;
+	text-align:center;
+	padding-top:45px;
+	color:#cbcbcb;
+}
+
+.donelistrow {
+	line-height:1.8;
+}
