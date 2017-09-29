@@ -50,16 +50,21 @@ var nextShuffle3 = function(){
 var clickHandler = function(){
 	isRandomShuffling = !isRandomShuffling;
 }
+
 var audio = new Audio('lagu_pengumuman.mp3');
+audio.play();
+
 var randomShuffle = function() {
 	if(isRandomShuffling){
-		audio.play();
+		audio.volume = 1;
 		var randomIndex = Math.floor(Math.random() * participantCount) + 1;
 		nextShuffle(randomIndex);
 		window.setTimeout(randomShuffle,500); //shuffle duration
 	} else {
 		//show, pause for a few seconds
-		audio.pause();
+		// audio.pause();
+		audio.play();
+		audio.volume = 0.35;
 		nextShuffle(data_rank[currentPosition]);
 		TweenMax.to(container,0.5,{opacity:1});
 		var that = this;
