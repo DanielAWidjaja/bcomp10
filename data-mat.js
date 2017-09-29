@@ -206,4 +206,4 @@ var kode_pst = [
 
 //rank/no of passing participants
 
-var data_rank = 
+var data_rank = [0, 20, 8, 2, 21, 38, 29, 12, 27, 35, 16, 40, 14, 39, 19, 24, 1, 36]
