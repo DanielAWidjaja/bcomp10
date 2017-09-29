@@ -13,7 +13,6 @@ var initShuffle = function(bidang){
 	window.bidanglomba = bidang;
 	
 	window.container = document.getElementById("container");
-	window.photo = document.getElementById("photo");
 	window.textContainer = document.getElementById("text-container");
 	window.rank = document.getElementById("rank");
 	window.names = document.getElementById("names");
@@ -62,18 +61,12 @@ var randomShuffle = function() {
 		//show, pause for a few seconds
 		audio.pause();
 		nextShuffle(data_rank[currentPosition]);
-		TweenMax.set(photo,{opacity:0});
 		TweenMax.to(container,0.5,{opacity:1});
-		photo.src="photos-" + bidanglomba + "/" + data_rank[currentPosition] + ".JPG";
-		console.log(photo.src);
-		TweenMax.to(photo,1,{opacity:1,delay:0.75,ease:Power2.easeInOut});
 		var that = this;
 		//bikin ilang njir
 		this.countdown_interval = setInterval(function() {
 			if (isRandomShuffling) {
-				TweenMax.to(container,1,{opacity:0.4});
-				photo.src="qmark.png";
-			
+				TweenMax.to(container,1,{opacity:0.4});			
 				//add to table;
 				var tableContents = doneList.innerHTML;
 				doneList.innerHTML ='<div id="donelistitem'
